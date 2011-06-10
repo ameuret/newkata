@@ -1,0 +1,3 @@
+class Skel
+  
+end

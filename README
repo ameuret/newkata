@@ -1,0 +1,7 @@
+EMACS users
+  
+  launch guard under bundler using the current rvm with:
+  
+  M-x eshell
+  M-x rvm-use-default
+  bundle exec guard
