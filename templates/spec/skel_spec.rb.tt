@@ -1,0 +1,10 @@
+require "#{File.dirname __FILE__}/../lib/<%= name.downcase %>"
+
+describe <%= name.capitalize %> do
+  
+  it 'should ' do
+    pending 'you can start specifying here:'
+  end
+  
+end
+

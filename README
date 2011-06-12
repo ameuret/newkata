@@ -1,7 +1,25 @@
+Kata Skeleton
+=============
+  
+  A simple project generator, handy to tryout a new class with a corresponding (r)spec.
+  
+Features
+--------
+  
+  - Generates a project structure that uses Bundler and Guard
+  - Trivial to customize thanks to Thor
+
+Usage
+-----
+  
+  bundle
+  bundle exec thor new_kata StringCalculator
+  
+  
 EMACS users
   
   launch guard under bundler using the current rvm with:
   
-  M-x eshell
-  M-x rvm-use-default
-  bundle exec guard
+    M-x eshell
+    M-x rvm-use-default
+    bundle exec guard
