@@ -25,6 +25,8 @@ EMACS users
   
     M-x rvm-use-default
     M-x eshell
+    
   then
+        
     cd stringcalculator
     bundle exec guard
