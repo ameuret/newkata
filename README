@@ -1,5 +1,5 @@
-Kata Skeleton
-=============
+New Kata
+========
   
   A simple project generator, handy to tryout a new class with a corresponding (r)spec.
   
@@ -13,13 +13,16 @@ Usage
 -----
   
   bundle
-  bundle exec thor new_kata StringCalculator
+  bundle exec newkata StringCalculator
   
   
 EMACS users
   
+  RVM (through http://www.emacswiki.org/emacs/RvmEl), Bundler and RSpec play nicely with EMACS.
   launch guard under bundler using the current rvm with:
   
-    M-x eshell
     M-x rvm-use-default
+    M-x eshell
+  then
+    cd StringCalculator
     bundle exec guard

@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+NEWKATALIB=File.dirname(__FILE__) + '/../lib'
+$: << NEWKATALIB unless $:.include? NEWKATALIB
+require "thor"
+require "newkata"
+
+NewKata.start
