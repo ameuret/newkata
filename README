@@ -8,10 +8,12 @@ Features
   
   - Generates a project structure that uses Bundler and Guard
   - Trivial to customize thanks to Thor
+  - So simple it can serve as a playground for beginners to Thor, Cucumber and Aruba
 
 Usage
 -----
   
+  (from within the newkata project dir, until I package the gem)
   bundle
   bundle exec newkata StringCalculator
   
@@ -24,5 +26,5 @@ EMACS users
     M-x rvm-use-default
     M-x eshell
   then
-    cd StringCalculator
+    cd stringcalculator
     bundle exec guard
