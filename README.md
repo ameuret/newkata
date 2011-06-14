@@ -19,6 +19,7 @@ Usage
   
   
 EMACS users
+-----------      
   
   RVM (through http://www.emacswiki.org/emacs/RvmEl), Bundler and RSpec play nicely with EMACS.
   launch guard under bundler using the current rvm with:
@@ -26,7 +27,7 @@ EMACS users
     M-x rvm-use-default
     M-x eshell
     
-  then
+then
         
-    cd stringcalculator
-    bundle exec guard
+  cd stringcalculator
+  bundle exec guard
