@@ -33,5 +33,5 @@ EMACS users
   
     M-x rvm-use-default
     M-x eshell
-
+    bundle exec guard
         
