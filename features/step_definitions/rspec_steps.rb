@@ -1,3 +1,3 @@
-When /^I sleep for (\d+) seconds$/ do |arg1|
-  sleep 5
+When /^I sleep for (\d+) seconds$/ do |dur|
+  sleep dur.to_i
 end

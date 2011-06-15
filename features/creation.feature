@@ -12,5 +12,10 @@ Feature: Project creation
     And the file "stringcalculator/lib/stringcalculator.rb" should contain "class StringCalculator"
     And the file "stringcalculator/spec/stringcalculator_spec.rb" should contain "describe StringCalculator"
 
+  Scenario: Specify a lower-cased name
+    When I run `newkata stringcalculator`
+    Then the output should contain "The name argument must be usable as a Ruby class name"
+
+      
   #  LocalWords:  StringCalculator stringcalculator newkata
   

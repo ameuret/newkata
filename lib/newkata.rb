@@ -1,25 +1,38 @@
-require "thor/group"
+require "thor/group"  
 
-class NewKata < Thor::Group
-  include Thor::Actions
+module NewKata
 
-  argument :name
+  class App < Thor::Group
+    include Thor::Actions
 
-  def self.source_root
-    File.dirname(__FILE__)
-  end
+    argument :name
+    
+    def self.source_root
+      File.dirname(__FILE__)
+    end
 
-  def create_class_file
-    template('../templates/lib/skel.rb.tt', "#{name.downcase}/lib/#{name.downcase}.rb")
-  end
+    def check_name
+      begin
+        instance_eval("class #{name};end")
+      rescue SyntaxError
+        puts "The name argument must be usable as a Ruby class name."
+        raise ArgumentError
+      end
+    end
+    
+    def create_class_file
+      template('../templates/lib/skel.rb.tt', "#{name.downcase}/lib/#{name.downcase}.rb")
+    end
 
-  def create_spec_file
-    template('../templates/spec/skel_spec.rb.tt', "#{name.downcase}/spec/#{name.downcase}_spec.rb")
+    def create_spec_file
+      template('../templates/spec/skel_spec.rb.tt', "#{name.downcase}/spec/#{name.downcase}_spec.rb")
+    end
+    
+    def copy_config_files
+      copy_file "../templates/Gemfile", "#{name.downcase}/Gemfile"
+      copy_file "../templates/Guardfile", "#{name.downcase}/Guardfile"
+    end
+
   end
   
-  def copy_config_files
-    copy_file "../templates/Gemfile", "#{name.downcase}/Gemfile"
-    copy_file "../templates/Guardfile", "#{name.downcase}/Guardfile"
-  end
-
 end
