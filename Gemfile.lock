@@ -12,7 +12,6 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
-    allison (2.0.3)
     bcat (0.6.1)
       rack (~> 1.0)
     builder (3.0.0)
@@ -25,14 +24,7 @@ GEM
       json (>= 1.4.6)
       term-ansicolor (>= 1.0.5)
     diff-lcs (1.1.2)
-    echoe (4.6.1)
-      allison (>= 2.0.3)
-      gemcutter (>= 0.7.0)
-      rake (>= 0.9.2)
-      rdoc (>= 3.6.1)
-      rubyforge (>= 2.0.4)
     ffi (1.0.9)
-    gemcutter (0.7.0)
     gherkin (2.4.0)
       json (>= 1.4.6)
     guard (0.4.2)
@@ -43,14 +35,11 @@ GEM
     guard-rspec (0.4.0)
       guard (>= 0.4.0)
     json (1.5.1)
-    json_pure (1.5.1)
     libnotify (0.5.5)
     rack (1.3.0)
-    rake (0.9.2)
     rb-inotify (0.8.5)
       ffi (>= 0.5.0)
     rdiscount (1.6.8)
-    rdoc (3.6.1)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -59,8 +48,6 @@ GEM
     rspec-expectations (2.6.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.6.0)
-    rubyforge (2.0.4)
-      json_pure (>= 1.1.7)
     term-ansicolor (1.0.5)
     thor (0.14.6)
 
@@ -70,7 +57,6 @@ PLATFORMS
 DEPENDENCIES
   aruba!
   cucumber
-  echoe
   guard
   guard-cucumber
   guard-rspec
