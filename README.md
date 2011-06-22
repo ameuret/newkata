@@ -24,6 +24,17 @@ Usage
     bundle
     bundle exec guard
   
+This will create the following project layout:
+  
+    stringcalculator/
+    ├── Gemfile
+    ├── Guardfile
+    ├── lib
+    │   └── stringcalculator.rb
+    └── spec
+        └── stringcalculator_spec.rb
+
+
   
 EMACS users
 -----------      
