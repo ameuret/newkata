@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "newkata"
   
+  s.add_dependency "thor"
   s.add_dependency "guard"
   s.add_dependency "rb-inotify"
   s.add_dependency "rspec"
