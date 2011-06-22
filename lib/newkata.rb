@@ -5,7 +5,11 @@ module NewKata
   class App < Thor::Group
     include Thor::Actions
 
-    argument :name
+    argument :name, type: :string, desc: "The name of the class on which this kata is focused"
+    desc "Creates a project directory fully equipped to support BDD with RSpec"
+    def self.banner
+      "#{basename} NAME"
+    end
     
     def self.source_root
       File.dirname(__FILE__)
