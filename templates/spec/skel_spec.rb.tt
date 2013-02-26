@@ -1,4 +1,4 @@
-require "#{File.dirname __FILE__}/../lib/<%= name.downcase %>"
+require "<%= name.downcase %>"
 
 describe <%= name %> do
   
