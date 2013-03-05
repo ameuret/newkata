@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    newkata (0.8.7)
+    newkata (0.8.8)
       guard
       guard-rspec
       libnotify
@@ -52,6 +52,7 @@ GEM
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
+    rake (10.0.3)
     rb-inotify (0.9.0)
       ffi (>= 0.5.0)
     rspec (2.13.0)
@@ -74,3 +75,4 @@ DEPENDENCIES
   cucumber
   guard-cucumber
   newkata!
+  rake
