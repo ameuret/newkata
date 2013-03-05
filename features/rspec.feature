@@ -6,10 +6,10 @@ Feature: Set up an RSpec environment running under Guard
   Given I run `newkata StringCalculator`
 
   Scenario: Coding under Guard
+    Given The default aruba timeout is 20 seconds
     When I cd to "stringcalculator"
     And I run `bundle exec guard` interactively
-    And I sleep for 5 seconds
-    And I stop the running process
+    And I type "quit"
     Then the output should contain "1 example, 0 failures, 1 pending"
   
   #  LocalWords:  StringCalculator stringcalculator newkata

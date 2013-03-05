@@ -1,3 +1,3 @@
 module Newkata
-  VERSION = "0.8.7"
+  VERSION = "0.8.8"
 end

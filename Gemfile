@@ -4,7 +4,7 @@ gemspec
 
 group :dev do
   gem "cucumber"
-  gem "aruba", git: "git@github.com:ameuret/aruba.git"
+  gem "aruba"
   gem "guard-cucumber"
 end
 
