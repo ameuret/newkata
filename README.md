@@ -1,6 +1,6 @@
 New Kata
 ========
-[![Build Status](https://secure.travis-ci.org/ameuret/newkata.png)](http://travis-ci.org/ameuret/newkata)
+[![Build Status](https://travis-ci.org/ameuret/newkata.png?branch=master)](https://travis-ci.org/ameuret/newkata)
 [![Code Climate](https://codeclimate.com/github/ameuret/newkata.png)](https://codeclimate.com/github/ameuret/newkata)  
   
   A simple project generator, handy to tryout a new class with a corresponding (r)spec.
