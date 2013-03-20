@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Newkata::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Arnaud Meuret"]
-  s.email       = ["arnaud@meuret.name"]
+  s.email       = ["arnaud@meuret.net"]
   s.homepage    = "https://github.com/ameuret/newkata"
   s.summary     = %q{Generate a simple Ruby project hierarchy perfect for code katas.}
   s.description = %q{A simple project generator, handy to tryout a new class with a corresponding (r)spec.}
