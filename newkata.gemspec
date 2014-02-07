@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["arnaud@meuret.net"]
   s.homepage    = "https://github.com/ameuret/newkata"
   s.summary     = %q{Generate a simple Ruby project hierarchy perfect for code katas.}
-  s.description = %q{A simple project generator, handy to tryout a new class with a corresponding (r)spec.}
+  s.description = %q{A simple project generator, handy to tryout a new class with a corresponding (r)spec. **NOW** producing a gem structure}
 
   s.rubyforge_project = "newkata"
   

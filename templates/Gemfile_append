@@ -1,0 +1,11 @@
+# Statements produced by newkata
+group :dev do
+  gem 'rake'
+  gem 'bundler', '~> 1.5'
+  gem 'guard'
+  gem 'rb-inotify'
+  gem 'rspec'
+  gem 'guard-rspec'
+  gem 'libnotify'
+end
+

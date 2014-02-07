@@ -16,6 +16,15 @@ Feature: Project creation
     When I run `newkata stringcalculator`
     Then the output should contain "The name argument must be usable as a Ruby class name"
 
-      
+
+  Scenario: Creating a gem kata
+    When I run `newkata StringCalculator --gem`
+    Then the following files should exist:
+    | stringcalculator/Rakefile   |
+    | stringcalculator/stringcalculator.gemspec |
+    And the file "stringcalculator/stringcalculator.gemspec" should contain "stringcalculator"
+    And the file "stringcalculator/Gemfile" should contain "# Statements produced by 'bundle gem'"
+    And the file "stringcalculator/Gemfile" should contain "# Statements produced by newkata"
+    
   #  LocalWords:  StringCalculator stringcalculator newkata
   

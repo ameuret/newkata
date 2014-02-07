@@ -12,6 +12,7 @@ Features
   - Trivial to customize thanks to Thor
   - So simple it can serve as a playground for beginners to Thor, Cucumber and Aruba
   - Gets you coding faster than you can say pinan nidan
+  - **NEW:** Optionnally creates a gem structure when launched with `--gem`  (thanks to `bundle gem`)
 
 Installation
 ------------
